@@ -44,6 +44,10 @@ public class MyLinkedList<E> implements Iterable<MyLinkedList.Node<E>> {
         return true;
     }
 
+    public void addFirst() {
+        addFirst(null);
+    }
+
     public void addFirst(E object) {
         if (object == null) {
             throw new IllegalArgumentException("Can`t add null object");

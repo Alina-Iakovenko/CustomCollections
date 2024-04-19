@@ -4,47 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06695844-4860-449f-be95-e6d8bf542adc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Collections.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/collections/MyTestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_IteratorMAL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_TrimToSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_addAllFromIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_addWithIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_addWithoutIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_checkCapacity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_clear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_constructorWithSetCapacity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_constructorWithoutParameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_contains.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_get.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_getArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_getCapacity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_getSize.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_indexOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_isEmpty.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_lastIndexOf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_remove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_removeAllGivenArraysElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_removeNullElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_removeObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_removeRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_set.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_sort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_sublist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_toString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/MyLinkedListTests/MyLinkedListTest.java" afterDir="false" />
+    <list default="true" id="06695844-4860-449f-be95-e6d8bf542adc" name="Changes" comment="MyArrayList, MyLinkedList,MyQueue done">
+      <change afterPath="$PROJECT_DIR$/src/tests/MyStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collections/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collections/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/MyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collections/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/collections/MyStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/collections/MyStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyLinkedListTests/MyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyQueueTests/MyQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyQueueTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +121,7 @@
     "JUnit.MyArrayList_toString.testToString_ListWithCustomObject_ReturnsStringWithObject.executor": "Run",
     "JUnit.MyArrayList_toString.testToString_ListWithFirstNull_ReturnsStringWithNullAnd2Elements.executor": "Run",
     "JUnit.MyArrayList_toString.testToString_ListWithTheLatestNull_ReturnsStringWith2ElementsAndNull.executor": "Run",
-    "JUnit.MyLinkedListTest.executor": "Coverage",
+    "JUnit.MyLinkedListTest.executor": "Run",
     "JUnit.MyLinkedListTest.testAddFirst_AddNullElement_Returns.executor": "Run",
     "JUnit.MyLinkedListTest.testAddFirst_ObjectToEmptyList_ReturnsTrueAndListWithHeadEqualsTail.executor": "Run",
     "JUnit.MyLinkedListTest.testAdd_NullObject_ReturnsFalse.executor": "Run",
@@ -165,7 +134,10 @@
     "JUnit.MyLinkedListTest.testContain_ElementEqualsTail_ReturnsElement.executor": "Run",
     "JUnit.MyLinkedListTest.testContain_ElementInEmptyList_ReturnsNull.executor": "Run",
     "JUnit.MyLinkedListTest.testContain_Element_ReturnsElement.executor": "Run",
+    "JUnit.MyLinkedListTest.testContain_Element_ReturnsTrue.executor": "Run",
     "JUnit.MyLinkedListTest.testContain_NullElement_ReturnsNull.executor": "Run",
+    "JUnit.MyLinkedListTest.testGetFirstOccurrence_ElementInEmptyList_ReturnsFalse.executor": "Run",
+    "JUnit.MyLinkedListTest.testGetFirstOccurrence_NullElement_ReturnsFalse.executor": "Run",
     "JUnit.MyLinkedListTest.testGetFirst_Element_ReturnsTheFirstElement.executor": "Run",
     "JUnit.MyLinkedListTest.testGetFirst_EmptyList_ReturnsNull.executor": "Run",
     "JUnit.MyLinkedListTest.testIteratorNext_OneElementLongList_ReturnsElement.executor": "Run",
@@ -199,7 +171,14 @@
     "JUnit.MyLinkedListTest.testToString_ListWith3Elements_ReturnsStringWith3Elements.executor": "Run",
     "JUnit.MyLinkedListTest.testToString_ListWithCustomObjectWithoutString_ReturnsStringWithObject.executor": "Run",
     "JUnit.MyLinkedListTest.testToString_ListWithCustomObject_ReturnsStringWithObject.executor": "Run",
+    "JUnit.MyQueueTest.executor": "Coverage",
+    "JUnit.MyQueueTest.testConstructor_ReturnsNotNullMyQueue.executor": "Run",
+    "JUnit.MyQueueTest.testIteratorNext_TwoElementLongListDoubleCallIterator_ReturnsElements.executor": "Run",
+    "JUnit.MyQueueTest.testPush_ObjectToListWithOneElement_ReturnsTrue.executor": "Run",
+    "JUnit.MyQueueTest.testToString_ListWith3Elements_ReturnsStringWith3Elements.executor": "Run",
+    "JUnit.MyStackTest.executor": "Run",
     "JUnit.tests in Collections.executor": "Coverage",
+    "JUnit.tests.MyArrayListTests in Collections.executor": "Coverage",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -213,7 +192,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.folding"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -221,6 +200,8 @@
       <recent name="D:\StudyingIT\EPAM\Java\Collections\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests.MyStackTests" />
+      <recent name="tests.MyQueueTests" />
       <recent name="tests.MyLinkedListTests" />
     </key>
   </component>
@@ -245,61 +226,61 @@
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.*" />
+          <option name="PATTERN" value="collections.MyLinkedList" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.MyLinkedListTests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTests.MyLinkedListTest" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTest" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLinkedListTest.testToString_EmptyList_ReturnsNoElements" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLinkedListTest.testContain_Element_ReturnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.MyLinkedListTests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.MyLinkedListTests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTests.MyLinkedListTest" />
-      <option name="METHOD_NAME" value="testToString_EmptyList_ReturnsNoElements" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTest" />
+      <option name="METHOD_NAME" value="testContain_Element_ReturnsTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLinkedListTest.testToString_ListWithCustomObjectWithoutString_ReturnsStringWithObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLinkedListTest.testGetFirstOccurrence_ElementInEmptyList_ReturnsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.MyLinkedListTests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.MyLinkedListTests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTests.MyLinkedListTest" />
-      <option name="METHOD_NAME" value="testToString_ListWithCustomObjectWithoutString_ReturnsStringWithObject" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTest" />
+      <option name="METHOD_NAME" value="testGetFirstOccurrence_ElementInEmptyList_ReturnsFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLinkedListTest.testToString_ListWithCustomObject_ReturnsStringWithObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyLinkedListTest.testGetFirstOccurrence_NullElement_ReturnsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.MyLinkedListTests.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.MyLinkedListTests" />
-      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTests.MyLinkedListTest" />
-      <option name="METHOD_NAME" value="testToString_ListWithCustomObject_ReturnsStringWithObject" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyLinkedListTest" />
+      <option name="METHOD_NAME" value="testGetFirstOccurrence_NullElement_ReturnsFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -309,11 +290,23 @@
       <module name="Collections" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="false" />
+          <option name="PATTERN" value="collections.*" />
+          <option name="ENABLED" value="true" />
         </pattern>
         <pattern>
-          <option name="PATTERN" value="collections.*" />
+          <option name="PATTERN" value="collections.MyArrayList" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="collections.MyLinkedList" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="collections.MyQueue" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="collections.MyStack" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -327,25 +320,26 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.MyArrayListTest" />
-      <item itemvalue="JUnit.tests in Collections" />
-      <item itemvalue="JUnit.MyLinkedListTest.testToString_EmptyList_ReturnsNoElements" />
-      <item itemvalue="JUnit.MyLinkedListTest.testToString_ListWithCustomObjectWithoutString_ReturnsStringWithObject" />
-      <item itemvalue="JUnit.MyLinkedListTest.testToString_ListWithCustomObject_ReturnsStringWithObject" />
+      <item itemvalue="JUnit.MyLinkedListTest.testContain_Element_ReturnsTrue" />
+      <item itemvalue="JUnit.MyLinkedListTest.testGetFirstOccurrence_ElementInEmptyList_ReturnsFalse" />
+      <item itemvalue="JUnit.MyLinkedListTest.testGetFirstOccurrence_NullElement_ReturnsFalse" />
       <item itemvalue="JUnit.MyLinkedListTest" />
+      <item itemvalue="JUnit.tests in Collections" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.tests in Collections" />
         <item itemvalue="JUnit.MyLinkedListTest" />
-        <item itemvalue="JUnit.MyLinkedListTest.testToString_ListWithCustomObjectWithoutString_ReturnsStringWithObject" />
-        <item itemvalue="JUnit.MyLinkedListTest.testToString_ListWithCustomObject_ReturnsStringWithObject" />
-        <item itemvalue="JUnit.MyLinkedListTest.testToString_EmptyList_ReturnsNoElements" />
+        <item itemvalue="JUnit.MyLinkedListTest.testContain_Element_ReturnsTrue" />
+        <item itemvalue="JUnit.MyLinkedListTest.testGetFirstOccurrence_NullElement_ReturnsFalse" />
+        <item itemvalue="JUnit.MyLinkedListTest.testGetFirstOccurrence_ElementInEmptyList_ReturnsFalse" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-4caba194b151-868cef46" />
         <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
         <option value="jdk-20.0.2-azul-20.0.2-4caba194b151-eb49e076" />
       </set>
@@ -360,7 +354,40 @@
       <option name="presentableId" value="Default" />
       <updated>1712817359981</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1713346509569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713346509569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="MyArrayList, MyLinkedList,MyQueue done">
+      <option name="closed" value="true" />
+      <created>1713369560213</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713369560213</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="MyArrayList, MyLinkedList,MyQueue done" />
+    <option name="LAST_COMMIT_MESSAGE" value="MyArrayList, MyLinkedList,MyQueue done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,24 +403,14 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/collections/MyLinkedList.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/MyLinkedListTests/MyLinkedListTest.java</url>
-          <line>271</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/collections/MyLinkedList.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tests/MyArrayListTests/MyArrayListTest_IteratorMAL.java</url>
           <line>19</line>
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/MyQueueTest.java</url>
+          <line>303</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -404,6 +421,22 @@
     </watches-manager>
   </component>
   <component name="com.gk646.codestats.settings.Save">
+    <option name="commitTimePoints">
+      <list>
+        <TimePoint>
+          <option name="timestamp" value="1713346509634" />
+          <option name="linesCode" value="8175" />
+          <option name="totalLines" value="9399" />
+          <option name="info" value="Initial commit" />
+        </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1713369560315" />
+          <option name="linesCode" value="8531" />
+          <option name="totalLines" value="9828" />
+          <option name="info" value="MyArrayList, MyLinkedList" />
+        </TimePoint>
+      </list>
+    </option>
     <option name="genericTimePoints">
       <list>
         <TimePoint>
@@ -412,6 +445,12 @@
           <option name="totalLines" value="8210" />
           <option name="info" value="12 квіт. 2024 р." />
         </TimePoint>
+        <TimePoint>
+          <option name="timestamp" value="1713369560315" />
+          <option name="linesCode" value="8531" />
+          <option name="totalLines" value="9828" />
+          <option name="info" value="17 квіт. 2024 р." />
+        </TimePoint>
       </list>
     </option>
   </component>
@@ -419,13 +458,23 @@
     <SUITE FILE_PATH="coverage/Collections$tests_in_Collections.ic" NAME="tests in Collections Coverage Results" MODIFIED="1713257318789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>collections.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/MyArrayList_java$MyLinkedListTest.ic" NAME="MyLinkedListTest Coverage Results" MODIFIED="1713345943336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>collections.*</FILTER>
+    <SUITE FILE_PATH="coverage/MyArrayList_java$MyLinkedListTest.ic" NAME="MyLinkedListTest Coverage Results" MODIFIED="1713371259926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>collections.MyLinkedList</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/MyArrayList_java$tests_in_Collections.ic" NAME="tests in Collections Coverage Results" MODIFIED="1713346058902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/MyArrayList_java$tests_in_Collections.ic" NAME="tests in Collections Coverage Results" MODIFIED="1713430754761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>collections.*</FILTER>
+      <FILTER>collections.MyArrayList</FILTER>
+      <FILTER>collections.MyLinkedList</FILTER>
+      <FILTER>collections.MyQueue</FILTER>
+      <FILTER>collections.MyStack</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MyArrayList_java$MyQueueTest.ic" NAME="MyQueueTest Coverage Results" MODIFIED="1713369431529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>collections.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Collections$MyArrayListTest.ic" NAME="MyArrayListTest Coverage Results" MODIFIED="1712851452058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>collections.MyArrayList</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/MyArrayList_java$tests_MyArrayListTests_in_Collections.ic" NAME="tests.MyArrayListTests in Collections Coverage Results" MODIFIED="1713371328898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>collections.MyArrayList</FILTER>
     </SUITE>
   </component>

@@ -1,4 +1,4 @@
-package tests.MyQueueTests;
+package tests;
 
 import collections.MyQueue;
 import collections.MyTestClass;
@@ -146,13 +146,13 @@ public class MyQueueTest<E> {
 
     //testPoll
     @Test
-    public void testRemoveFirst_EmptyList_ReturnsIndexOutOfBoundsException() {
+    public void testPoll_EmptyList_ReturnsIndexOutOfBoundsException() {
         MyQueue<Integer> testQueue = new MyQueue();
         assertThrows(IndexOutOfBoundsException.class, testQueue::poll);
     }
 
     @Test
-    public void testRemoveFirst_Element_ReturnsTheFirstElementAndShorterList() {
+    public void testPoll_Element_ReturnsTheFirstElementAndShorterList() {
         MyQueue<Integer> testQueue = new MyQueue();
         testQueue.push(111);
         testQueue.push(222);
@@ -165,7 +165,7 @@ public class MyQueueTest<E> {
     }
 
     @Test
-    public void testRemoveFirst_ElementFrom1ElementLongList_ReturnsTheFirstElementAndEmptyList() {
+    public void testPoll_ElementFrom1ElementLongList_ReturnsTheFirstElementAndEmptyList() {
         MyQueue<Integer> testQueue = new MyQueue();
         testQueue.push(111);
         assertEquals(111, testQueue.poll());

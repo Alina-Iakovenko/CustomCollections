@@ -1,40 +1,36 @@
-package tests.MyLinkedListTests;
+package tests;
 
-import collections.MyArrayList;
 import collections.MyLinkedList;
-import collections.MyLinkedList.IteratorMLL;
-import collections.MyLinkedList.Node;
 import collections.MyTestClass;
 import org.junit.jupiter.api.Test;
 
-import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MyLinkedListTest<E> {
+public class MyLinkedListTest<E> extends MyLinkedList<E> {
     @Test
     public void testConstructor_ReturnsNotNullMyLinkedList() {
-        MyLinkedList<MyTestClass> testList = new MyLinkedList();
+        MyLinkedList<MyTestClass> testList = new MyLinkedList<>();
         assertNotNull(testList);
     }
 
     // testAdd
     @Test
     public void testAdd_NullObject_ReturnsFalse() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertFalse(testList.add(null));
-        assertNull(testList.getHead());
-        assertNull(testList.getTail());
+        assertNull(testList.getFirst());
+        assertNull(testList.getLast());
     }
 
     @Test
     public void testAdd_ObjectToEmptyList_ReturnsTrueAndListWithHeadEqualsTail() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertTrue(testList.add(111));
-        assertEquals(111, testList.getHead().getObject());
+        assertEquals(111, testList.getFirst());
 
-        assertEquals(testList.getHead(), testList.getTail());
+        assertEquals(testList.getFirst(), testList.getLast());
 
         assertNull(testList.getHead().getNext());
         assertNull(testList.getHead().getPrevious());
@@ -45,7 +41,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAdd_ObjectToListWithOneElement_ReturnsTrue() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         assertTrue(testList.add(222));
 
@@ -61,7 +57,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAdd_Object_ReturnsTrue() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
 
@@ -85,7 +81,7 @@ public class MyLinkedListTest<E> {
     // testAddFirst
     @Test
     public void testAddFirst_AddNullElement_ReturnsIllegalArgumentException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(IllegalArgumentException.class, () -> testList.addFirst(null));
         assertNull(testList.getHead());
         assertNull(testList.getTail());
@@ -93,7 +89,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAddFirst_ObjectToEmptyList_ReturnsListWithHeadEqualsTail() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.addFirst(111);
         assertEquals(111, testList.getHead().getObject());
 
@@ -124,7 +120,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAddFirst_Object_ReturnsValidList() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
 
@@ -149,7 +145,7 @@ public class MyLinkedListTest<E> {
     // testAddLast
     @Test
     public void testAddLast_NullObject_ReturnsIllegalArgumentException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(IllegalArgumentException.class, () -> testList.addLast(null));
         assertNull(testList.getHead());
         assertNull(testList.getTail());
@@ -157,7 +153,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAddLast_ObjectToEmptyList_ReturnsTrueAndListWithHeadEqualsTail() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.addLast(111);
         assertEquals(111, testList.getHead().getObject());
 
@@ -172,7 +168,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAddLast_ObjectToListWithOneElement_ReturnsTrue() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.addLast(222);
 
@@ -188,7 +184,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testAddLast_Object_ReturnsTrue() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
 
@@ -212,7 +208,7 @@ public class MyLinkedListTest<E> {
     // testSet
     @Test
     public void testSet_ReplaceNullElement_ReturnsIllegalArgumentException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -223,7 +219,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testSet_ReplaceToNullElement_ReturnsIllegalArgumentException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -234,7 +230,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testSet_ReplaceNotValidlElement_ReturnsIllegalArgumentException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -245,7 +241,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testSet_ReplaceTheFirstElement_ReturnsListWithNewValueOfTheFirstElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -262,7 +258,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testSet_ReplaceTheSecondElement_ReturnsListWithNewValueOfTheSecondElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -279,7 +275,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testSet_ReplaceTheLatestElement_ReturnsListWithNewValueOfThLatestElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -296,101 +292,101 @@ public class MyLinkedListTest<E> {
 
     // testContain
     @Test
-    public void testContain_ElementInEmptyList_ReturnsNull() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
-        assertNull(testList.contains(111));
+    public void testContain_ElementInEmptyList_ReturnsFalse() {
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
+        assertFalse(testList.contains(111));
     }
 
     @Test
-    public void testContain_NullElement_ReturnsNull() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+    public void testContain_NullElement_ReturnsFalse() {
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertNull(testList.contains(null));
+        assertFalse(testList.contains(null));
     }
 
     @Test
-    public void testContain_ElementEqualsHead_ReturnsElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+    public void testContain_ElementEqualsHead_ReturnsTrue() {
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertEquals(111, testList.contains(111).getObject());
+        assertTrue(testList.contains(111));
     }
 
     @Test
-    public void testContain_Element_ReturnsElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+    public void testContain_Element_ReturnsTrue() {
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertEquals(333, testList.contains(333).getObject());
+        assertTrue(testList.contains(333));
     }
 
     @Test
-    public void testContain_ElementEqualsTail_ReturnsElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+    public void testContain_ElementEqualsTail_ReturnsTrue() {
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertEquals(555, testList.contains(555).getObject());
+        assertTrue(testList.contains(555));
     }
 
     // testGetFirst
     @Test
     public void testGetFirst_EmptyList_ReturnsNull() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertNull(testList.getFirst());
     }
 
     @Test
     public void testGetFirst_Element_ReturnsTheFirstElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertEquals(111, testList.getFirst().getObject());
+        assertEquals(111, testList.getFirst());
     }
 
     // testGetLast
     @Test
     public void testGetLast_EmptyList_ReturnsNull() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertNull(testList.getFirst());
     }
 
     @Test
     public void testGetLast_Element_ReturnsTheLatestElement() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
         testList.add(444);
         testList.add(555);
-        assertEquals(555, testList.getLast().getObject());
+        assertEquals(555, testList.getLast());
     }
 
     //testRemoveFirst
     @Test
     public void testRemoveFirst_EmptyList_ReturnsIndexOutOfBoundsException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(IndexOutOfBoundsException.class, testList::removeFirst);
     }
 
     @Test
     public void testRemoveFirst_Element_ReturnsTheFirstElementAndShorterList() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -404,7 +400,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testRemoveFirst_ElementFrom1ElementLongList_ReturnsTheFirstElementAndEmptyList() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         assertEquals(111, testList.removeFirst().getObject());
         assertNull(testList.getHead());
@@ -414,13 +410,13 @@ public class MyLinkedListTest<E> {
     //testRemoveLast
     @Test
     public void testRemoveLast_EmptyList_ReturnsIndexOutOfBoundsException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(IndexOutOfBoundsException.class, testList::removeLast);
     }
 
     @Test
     public void testRemoveLast_Element_ReturnsTheLastElementAndShorterList() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -434,7 +430,7 @@ public class MyLinkedListTest<E> {
 
     @Test
     public void testRemoveLast_ElementFrom1ElementLongList_ReturnsTheLastElementAndEmptyList() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         assertEquals(111, testList.removeLast().getObject());
         assertNull(testList.getHead());
@@ -444,20 +440,20 @@ public class MyLinkedListTest<E> {
     //testRemove
     @Test
     public void testRemove_EmptyList_ReturnsIndexOutOfBoundsException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(IndexOutOfBoundsException.class, () -> testList.remove(111));
     }
 
     @Test
     public void testRemove_NullElement_ReturnsIndexOutOfBoundsException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         assertThrows(IllegalArgumentException.class, () -> testList.remove(null));
     }
 
     @Test
     public void testRemove_NotValidElement_ReturnsIndexOutOfBoundsException() {
-        MyLinkedList<Integer> testList = new MyLinkedList();
+        MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         testList.add(333);
@@ -537,7 +533,7 @@ public class MyLinkedListTest<E> {
     }
 
     @Test
-    public void testSize_1002LongList_ReturnZero() {
+    public void testSize_1002LongList_Return1002() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         for (int i = 0; i < 1002; i++) {
             testList.add(i);
@@ -610,7 +606,7 @@ public class MyLinkedListTest<E> {
     }
 
     @Test
-    public <E> void testIterator_forEach() {
+    public void testIterator_forEach() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(1);
         testList.add(2);
@@ -619,38 +615,38 @@ public class MyLinkedListTest<E> {
 
         int sum = 0;
 
-        for (Node<Integer> integerNode : testList) {
-            sum += integerNode.getObject();
+        for (Integer integerNode : testList) {
+            sum += integerNode;
         }
         assertEquals(10, sum);
     }
 
     @Test
-    public <E> void testIteratorHasNext_EmptyList_ReturnsFalse() {
+    public void testIteratorHasNext_EmptyList_ReturnsFalse() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertFalse(() -> testList.iterator().hasNext());
     }
 
     @Test
-    public <E> void testIteratorNext_EmptyList_ReturnsNoSuchElementException() {
+    public void testIteratorNext_EmptyList_ReturnsNoSuchElementException() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         assertThrows(NoSuchElementException.class, () -> testList.iterator().next());
     }
 
     @Test
-    public <E> void testIteratorNext_OneElementLongList_ReturnsElement() {
+    public void testIteratorNext_OneElementLongList_ReturnsElement() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
-        assertEquals(111, testList.iterator().next().getObject());
+        assertEquals(111, testList.iterator().next());
     }
 
     @Test
-    public <E> void testIteratorNext_TwoElementLongListDoubleCallIterator_ReturnsElements() {
+    public void testIteratorNext_TwoElementLongListDoubleCallIterator_ReturnsElements() {
         MyLinkedList<Integer> testList = new MyLinkedList<>();
         testList.add(111);
         testList.add(222);
         IteratorMLL iterator = (IteratorMLL) testList.iterator();
-        assertEquals(111, iterator.next().getObject());
-        assertEquals(222, iterator.next().getObject());
+        assertEquals(111, iterator.next());
+        assertEquals(222, iterator.next());
     }
 }
